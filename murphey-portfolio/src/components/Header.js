@@ -1,15 +1,20 @@
-export default function Header({ onNavItemClick }) {
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+
+export function Header({ onNavItemClick }) {
     return (
         <div>
             <h1>Hello</h1>
             <nav>
                 <ul>
                     {
-                        NAV_ITEM_NAMES.map(item => {
+                        NAV_PAGES.map(page => {
                             return (
-                                <li key={item.itemName}
-                                onClick={() => onNavItemClick(item.itemName)}>
-                                    {item.itemName}
+                                <li key={page.pageName}
+                                onClick={() => onNavItemClick(page.pageName)}>
+                                    {page.pageName}
                                 </li>
                             )
                         })
@@ -20,17 +25,21 @@ export default function Header({ onNavItemClick }) {
     )
 };
 
-export const NAV_ITEM_NAMES = [
+export const NAV_PAGES = [
     {
-        itemName: 'About Me'
+        pageName: 'About Me',
+        component: <AboutMe />,
     },
     {
-        itemName: 'Portfolio'
+        pageName: 'Portfolio',
+        component: <Portfolio />,
     },
     {
-        itemName: 'Contact'
+        pageName: 'Contact',
+        component: <Contact />,
     },
     {
-        itemName: 'Resume'
+        pageName: 'Resume',
+        component: <Resume />,
     }
 ];

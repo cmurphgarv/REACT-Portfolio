@@ -1,9 +1,9 @@
-import Portfolio from './components/pages/Portfolio'
+import NavBar from './components/NavBar'
 //import './App.css';
 
 function App() {
   return (
-    <Portfolio />
+    <NavBar />
   );
 }
 

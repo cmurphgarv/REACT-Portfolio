@@ -1,23 +1,24 @@
-import Header from './Header';
+import { Header, NAV_PAGES } from './Header';
 import Footer from './Footer';
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 export default function NavBar() {
-    const [currentPage, setCurrentPage] = useState('About Me');
+    const [currentPage, setCurrentPage] = useState(NAV_PAGES[0].pageName);
 
-    const onNavItemClick = (itemName) => {
-        setCurrentPage(itemName);
+    const onNavItemClick = (pageName) => {
+        setCurrentPage(pageName);
     }
 
     const renderCurrentPage = () => {
-        if (currentPage === 'About Me') {
-            return <AboutMe />
-        } else if (currentPage === 'Contact') {
-            return <Contact />
-        } else if (currentPage === 'Resume') {
-            return <Resume />
-        } else if (currentPage === 'Portfolio') {
-            return <Portfolio />
+
+        for (const navItem of NAV_PAGES) {
+            if (currentPage === navItem.pageName) {
+                return navItem.component;
+            }
         }
     }
     return (
