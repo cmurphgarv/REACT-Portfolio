@@ -2,6 +2,7 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+//import style from '../styles/Header';
 
 export function Header({ onNavItemClick }) {
     return (
