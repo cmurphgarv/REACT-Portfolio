@@ -12,7 +12,7 @@
 .contactContainer {
     background-color: #789488;
     font-family: "Raleway", sans-serif;
-    color: var(--white);
+    color: var(--black);
     padding-left: 3em;
     padding-top: 5em;
     padding-bottom: 10em;
@@ -22,13 +22,15 @@
 }
 
 .contactForm {
-    background-color: darkgray;
-    text-align: center;
+    background-color: #ccc;
+    text-align: left;
     width: 800px;
     padding-top: 4em;
     padding-bottom: 4em;
+    padding-left: 2em;
     margin-left: 19em;
     margin-top: 2em;
+    border-radius: 4px;
 }
 
 .contactContainer button {
@@ -36,13 +38,42 @@
     border-radius: 8px;
     padding: 10px 10px;
     font-size: 15px;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-left: 2em;
 }
 .contactContainer button:hover {
     background-color: #a6c3c3;
     color: white;
 }
 
-.inputField {
-    padding: 1em;
+p {
+    font-weight: 550;
 }
+
+.inputFieldDiv {
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 2em;
+
+}
+
+.smallInput {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.smallInput:focus {
+    border: 3px solid #555;
+  }
+
+  .messageBox {
+    padding: 1em;
+    width: 100%;
+    border-radius: 4px;
+    height: 150px;
+    resize: none;
+  }
+
+  .messageBox:focus {
+    border: 3px solid #555;
+  }

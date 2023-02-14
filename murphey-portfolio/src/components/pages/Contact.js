@@ -54,8 +54,9 @@ export default function ContactForm() {
     return (
         <div className='contactContainer'>
             <form className='contactForm' onSubmit={handleSubmit}>
-                <div className='inputField'>Name:
-                    <input
+                <div className='inputFieldDiv'>
+                    <p>Name:</p>
+                    <input className='smallInput'
                         value={name}
                         name="name"
                         onChange={handleChange}
@@ -64,8 +65,9 @@ export default function ContactForm() {
                         placeholder=""
                         required />
                 </div>
-                <div className='inputField'>Email:
-                    <input
+                <div className='inputFieldDiv'>
+                <p>Email:</p>
+                    <input className='smallInput'
                         value={email}
                         name="email"
                         onChange={handleChange}
@@ -74,13 +76,14 @@ export default function ContactForm() {
                         placeholder=""
                         required />
                 </div>
-                <div className='inputField'>Message:
-                    <input
+                <div className='inputFieldDiv'>
+                <p>Message:</p>
+                    <textarea className='messageBox'
                         value={message}
                         name="message"
                         onChange={handleChange}
                         onBlur={handleFormTouch}
-                        type="text"
+                        minLength="10"
                         placeholder=""
                         required />
                 </div>
