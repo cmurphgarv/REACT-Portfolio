@@ -1,0 +1,43 @@
+
+:root {
+    --white: #fff;
+    --white2: #f1f1f1;
+    --gray1: #616161;
+    --gray2: #757575;
+    --black: #000;
+    --green1: #789488;
+    --green2: #a6c3c3;
+}
+
+.resumeContainer {
+    background-color: #789488;
+    font-family: "Raleway", sans-serif;
+    color: var(--white);
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 10em;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    text-align: left;
+}
+
+.resumeContainer h3 {
+    font-weight: 600;
+}
+
+.resumeContainer ul {
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+.resumeContainer button {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+.resumeContainer button:hover {
+    background-color: #a6c3c3;
+    color: white;
+}

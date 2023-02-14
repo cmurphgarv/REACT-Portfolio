@@ -2,25 +2,28 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
-//import style from '../styles/Header';
+import '../styles/Header.css';
 
 export function Header({ onNavItemClick }) {
     return (
-        <div>
-            <h1>Hello</h1>
-            <nav>
-                <ul>
-                    {
-                        NAV_PAGES.map(page => {
-                            return (
-                                <li key={page.pageName}
-                                onClick={() => onNavItemClick(page.pageName)}>
-                                    {page.pageName}
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
+        <div className='headerContainer'>
+            
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">CHARLOTTE MURPHEY</a>
+                    <ul class="navbar-nav">
+                        {
+                            NAV_PAGES.map(page => {
+                                return (
+                                    <li class="nav-item" key={page.pageName}
+                                    onClick={() => onNavItemClick(page.pageName)}>
+                                        {page.pageName}
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
             </nav>
         </div>
     )
@@ -36,11 +39,11 @@ export const NAV_PAGES = [
         component: <Portfolio />,
     },
     {
-        pageName: 'Contact',
-        component: <Contact />,
-    },
-    {
         pageName: 'Resume',
         component: <Resume />,
-    }
+    },
+    {
+        pageName: 'Contact',
+        component: <Contact />,
+    }   
 ];

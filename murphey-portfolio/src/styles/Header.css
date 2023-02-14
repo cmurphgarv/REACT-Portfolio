@@ -1,3 +1,26 @@
-.headerContainer {
-    font-family: 'Courier New', Courier, monospace;
+:root {
+    --white: #fff;
+    --white2: #f1f1f1;
+    --gray1: #616161;
+    --gray2: #757575;
+    --black: #000;
+}
+
+.navbar {
+    background-color: #f1f1f1;
+    color: #616161;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    height: 100px;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding: 2em;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+    color: var(--black);
 }

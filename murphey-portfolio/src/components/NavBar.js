@@ -5,6 +5,7 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import '../styles/NavBar.css'
 
 export default function NavBar() {
     const [currentPage, setCurrentPage] = useState(NAV_PAGES[0].pageName);
@@ -24,7 +25,7 @@ export default function NavBar() {
     return (
         <div>
             <Header onNavItemClick={onNavItemClick}/>
-            <section>{renderCurrentPage()}</section>
+            <section class="container-fluid g-0">{renderCurrentPage()}</section>
             <Footer />
         </div>
     )

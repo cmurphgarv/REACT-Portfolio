@@ -1,0 +1,48 @@
+
+:root {
+    --white: #fff;
+    --white2: #f1f1f1;
+    --gray1: #616161;
+    --gray2: #757575;
+    --black: #000;
+    --green1: #789488;
+    --green2: #a6c3c3;
+}
+
+.contactContainer {
+    background-color: #789488;
+    font-family: "Raleway", sans-serif;
+    color: var(--white);
+    padding-left: 3em;
+    padding-top: 5em;
+    padding-bottom: 10em;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.contactForm {
+    background-color: darkgray;
+    text-align: center;
+    width: 800px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-left: 19em;
+    margin-top: 2em;
+}
+
+.contactContainer button {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 15px;
+    margin-top: 1em;
+}
+.contactContainer button:hover {
+    background-color: #a6c3c3;
+    color: white;
+}
+
+.inputField {
+    padding: 1em;
+}
