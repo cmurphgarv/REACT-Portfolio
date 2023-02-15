@@ -12,6 +12,7 @@
     font-family: "Raleway", sans-serif;
     margin: 0;
     height: 100px;
+    justify-content: end;
 }
 
 .nav-item {
