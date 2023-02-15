@@ -18,18 +18,19 @@
     background-color: #8c8981;
     margin: 0;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .logos {
     width: 25px;
     height: 25px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 14em;
+    margin: 2em;
     justify-content: center;
 }
 
 .logo-position {
+    display: flex;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }

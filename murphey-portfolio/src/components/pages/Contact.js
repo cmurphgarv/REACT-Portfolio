@@ -54,38 +54,50 @@ export default function ContactForm() {
     return (
         <div className='contactContainer'>
             <form className='contactForm' onSubmit={handleSubmit}>
-                <div className='inputFieldDiv'>
-                    <p>Name:</p>
-                    <input className='smallInput'
-                        value={name}
-                        name="name"
-                        onChange={handleChange}
-                        onBlur={handleFormTouch}
-                        type="text"
-                        placeholder=""
-                        required />
+                <div className='inputFieldDiv' class="row">
+                    <div class="col-25">
+                        <label>Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input className='smallInput'
+                            value={name}
+                            name="name"
+                            onChange={handleChange}
+                            onBlur={handleFormTouch}
+                            type="text"
+                            placeholder=""
+                            required />
+                    </div>
                 </div>
-                <div className='inputFieldDiv'>
-                <p>Email:</p>
-                    <input className='smallInput'
-                        value={email}
-                        name="email"
-                        onChange={handleChange}
-                        onBlur={handleFormTouch}
-                        type="text"
-                        placeholder=""
-                        required />
+                <div className='inputFieldDiv' class="row">
+                    <div class="col-25">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input className='smallInput'
+                            value={email}
+                            name="email"
+                            onChange={handleChange}
+                            onBlur={handleFormTouch}
+                            type="text"
+                            placeholder=""
+                            required />
+                    </div>
                 </div>
-                <div className='inputFieldDiv'>
-                <p>Message:</p>
-                    <textarea className='messageBox'
-                        value={message}
-                        name="message"
-                        onChange={handleChange}
-                        onBlur={handleFormTouch}
-                        minLength="10"
-                        placeholder=""
-                        required />
+                <div className='inputFieldDiv' class="row">
+                    <div class="col-25">
+                        <label>Message:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea className='messageBox'
+                            value={message}
+                            name="message"
+                            onChange={handleChange}
+                            onBlur={handleFormTouch}
+                            minLength="10"
+                            placeholder=""
+                            required />
+                    </div>
                 </div>
                 <button type="button" onClick={handleSubmit}>
                     Submit
